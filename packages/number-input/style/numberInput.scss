@@ -1,0 +1,64 @@
+
+.ch-number-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ch-number-input-progress {
+  position: absolute;
+  width: 294px;
+}
+
+.ch-number-input-progress :deep(.el-progress-bar__outer) {
+  border-radius: 10px;
+  background-color: #454545;
+  border: 4px solid #454545;
+}
+
+.ch-number-input .ch-number-input-progress :deep(.el-progress-bar__inner) {
+  border-radius: 10px;
+  background-color: #767676;
+  transition: width 0.025s linear 0s;
+}
+.ch-number-input.ch-number-input-drag-doing .ch-number-input-progress :deep(.el-progress-bar__inner) {
+  background-color: #f58807;
+}
+.ch-number-input.ch-number-input-edit .ch-number-input-progress :deep(.el-progress-bar__inner) {
+  background-color: #f58807;
+}
+
+.ch-number-input :deep(.el-input-number) {
+  width: 270px;
+  padding: 1px 10px;
+  border: 2px solid #454545;
+  background-color: transparent;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.ch-number-input.ch-number-input-drag-tips :deep(.el-input-number) {
+  border-color: #f58807;
+}
+.ch-number-input.ch-number-input-drag-doing :deep(.el-input-number) {
+  border-color: #f58807;
+}
+.ch-number-input.ch-number-input-edit :deep(.el-input-number) {
+  border-color: #f58807;
+}
+
+.ch-number-input :deep(.el-input__wrapper) {
+  box-shadow: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.ch-number-input :deep(input) {
+  height: 14px;
+  color: white;
+  font-size: 12px;
+}
+
+.ch-number-input.ch-number-input-drag-tips :deep(input) {
+  cursor: e-resize;
+}

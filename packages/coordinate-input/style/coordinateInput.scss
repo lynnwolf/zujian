@@ -1,0 +1,81 @@
+
+.ch-coordinate-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ch-coordinate-input-progress {
+  position: absolute;
+  width: 65px;
+}
+
+.ch-coordinate-input-progress :deep(.el-progress-bar__outer) {
+  border-radius: 0 6px 6px 0;
+  background-color: #252727;
+  border: 1px solid #252727;
+  border-left: none;
+}
+
+.ch-coordinate-input .ch-coordinate-input-progress :deep(.el-progress-bar__inner) {
+  border-radius: 0;
+  background-color: #767676;
+  transition: width 0.025s linear 0s;
+}
+.ch-coordinate-input.ch-coordinate-input-drag-doing .ch-coordinate-input-progress :deep(.el-progress-bar__inner) {
+  background-color: #f58807;
+}
+.ch-coordinate-input.ch-coordinate-input-edit .ch-coordinate-input-progress :deep(.el-progress-bar__inner) {
+  background-color: #252727;
+}
+
+.ch-coordinate-input :deep(.el-tag) {
+  height: 20px;
+  padding: 11px 5px;
+  border-radius: 6px 0 0 6px;
+  border-width: 1px 2px 1px 1px;
+  border-style: solid;
+  color: white;
+  font-size: 12px;
+}
+
+.ch-coordinate-input.x :deep(.el-tag) {
+  border-color: #cf4a2c;
+  background-color: #cf4a2c;
+}
+
+.ch-coordinate-input.y :deep(.el-tag) {
+  border-color: #c98d2f;
+  background-color: #c98d2f;
+}
+
+.ch-coordinate-input.z :deep(.el-tag) {
+  border-color: #318fcc;
+  background-color: #318fcc;
+}
+
+.ch-coordinate-input :deep(.el-input-number) {
+  width: 44px;
+  padding: 1px 10px;
+  border: 1px solid #3d4042;
+  background-color: transparent;
+  border-left: none;
+  border-radius: 0 6px 6px 0;
+  font-size: 12px;
+}
+
+.ch-coordinate-input :deep(.el-input__wrapper) {
+  box-shadow: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.ch-coordinate-input :deep(input) {
+  height: 20px;
+  color: white;
+  font-size: 12px;
+}
+
+.ch-coordinate-input.ch-coordinate-input-drag-tips :deep(input) {
+  cursor: e-resize;
+}

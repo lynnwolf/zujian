@@ -1,0 +1,18 @@
+.qs-button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.el-button--default {
+  background-color: #1F6AFF;
+}
+
+.el-button--primary {
+  background-color: #F59507;
+}
